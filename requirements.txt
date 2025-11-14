@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+pydantic
+sqlalchemy[asyncio]
+# asyncpg
+celery
+redis
+sendgrid
+twilio
+firebase-admin
+prometheus-fastapi-instrumentator
+prometheus-client
+alembic
+jose  # For JWT
+slowapi  # For rate limiting
+pytest
+pytest-asyncio

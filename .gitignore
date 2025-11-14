@@ -1,0 +1,85 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pytest_cache/
+.hypothesis/
+.pyre/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Docker
+Dockerfile.*
+docker-compose*.yml
+.dockerignore
+
+# Database
+*.db
+*.sqlite3
+*.sqlite
+
+# Logs
+app.log
+logs/
+*.log
+
+# IDE / Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build / Dist
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Firebase credentials
+credentials/
+firebase.json
+*.json
+
+# Alembic migrations 
+app/db/alembic/versions/__pycache__/
+app/db/alembic/script.py.mako
+
+# Celery
+celerybeat-schedule
+celeryd.pid
+
+# Prometheus / Grafana data 
+prometheus/data/
+grafana/data/
+
+# Tests
+htmlcov/
+.coverage
+.coverage.*
