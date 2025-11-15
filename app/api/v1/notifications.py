@@ -1,5 +1,3 @@
-#Endpoints to trigger events, get reports, and handle webhooks.
-
 from fastapi import APIRouter, Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
 from pydantic import BaseModel
@@ -38,7 +36,7 @@ async def trigger_notification(notification: NotificationCreate, db: AsyncSessio
     logger.info(f"Triggering notification for event: {notification.event_type}")
     try:
         # Enqueue task via Celery
-        send_notification.delay(notification.dict())
+        send_notification.delay(notification.model_dump())
         # Log to DB
         await NotificationRepo.create(db, notification)
         return {"message": "Notification queued"}

@@ -11,7 +11,7 @@ firebase-admin
 prometheus-fastapi-instrumentator
 prometheus-client
 alembic
-jose  # For JWT
+python-jose[cryptography] # For JWT
 slowapi  # For rate limiting
 pytest
 pytest-asyncio

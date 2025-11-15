@@ -18,5 +18,11 @@ class NotificationUpdate(BaseModel):
     attempt: int
     created_at: datetime
 
+class NotificationReport(NotificationBase):
+    id: int
+    status: str
+    attempts: int
+    created_at: datetime    
+
 class Config:
     from_attributes = True # for ORM mode
